@@ -9,4 +9,5 @@
 #include <statreg.cpp>
 #endif
 
-#include <atlimpl.cpp>
+// Commnet out for VS 2017 Community
+// #include <atlimpl.cpp>

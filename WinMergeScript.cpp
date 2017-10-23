@@ -113,30 +113,43 @@ STDMETHODIMP CWinMergeScript::UnpackFile(BSTR fileSrc, BSTR fileDst, VARIANT_BOO
 		tstikaParam = L"\"" + tstikaParam + L"\"";
 		//::MessageBox(NULL, tstikaParam.c_str(), L"tstikaParam", 0);
 	}
-	i = tsTempFileName.rfind(L'.');
-	tstring tstemporaryTextFile = tsTempFileName.substr(0, i) + L".txt";
-
 	// $TEMP+fileSrc(binary) to $TEMP+fileSrc(.txt)
-	tstikaParam = L"java -jar C:\\tools\\tika-app-1.16.jar -t " + tstikaParam + L" > " + tstemporaryTextFile;
+	tstikaParam = L"java -jar C:\\tools\\tika-app-1.16.jar -t " + tstikaParam;
 	size_t tikaParamSize = wcslen(tstikaParam.c_str());
 	TCHAR *tikaParam = new TCHAR[tikaParamSize + 1];
 	wcscpy_s(tikaParam, tikaParamSize + 1, tstikaParam.c_str());
 	//wcscpy(tikaParam, tstikaParam.c_str());
 	//::MessageBox(NULL, tikaParam, L"tikaParam", 0);
 
+	SECURITY_ATTRIBUTES sec_a;
+	ZeroMemory(&sec_a,sizeof(sec_a));
+	sec_a.bInheritHandle = TRUE;
+	HANDLE htempTextFile;
+	i = tsTempFileName.rfind(L'.');
+	tstring tstempTextFile = tsTempFileName.substr(0, i) + L".txt";
+	size_t tempTextFileSize = wcslen(tstempTextFile.c_str());
+	TCHAR *tempTextFile = new TCHAR[tempTextFileSize + 1];
+	wcscpy_s(tempTextFile, tempTextFileSize + 1, tstempTextFile.c_str());
+	htempTextFile =
+		::CreateFile(tempTextFile, GENERIC_WRITE, FILE_SHARE_WRITE,
+			&sec_a, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);
+
 	PROCESS_INFORMATION pi;
 	STARTUPINFO si;
 	::ZeroMemory(&si, sizeof(si));
 	si.cb = sizeof(si);
-	::CreateProcess(NULL, tikaParam, NULL, NULL, NULL, CREATE_NO_WINDOW | NORMAL_PRIORITY_CLASS, NULL, NULL, &si, &pi);
+	si.dwFlags = STARTF_USESTDHANDLES;
+	si.hStdOutput = htempTextFile;
+	::CreateProcess(NULL, tikaParam, NULL, NULL, TRUE, CREATE_NO_WINDOW | NORMAL_PRIORITY_CLASS, NULL, NULL, &si, &pi);
+	::CloseHandle(htempTextFile);
 	::CloseHandle(pi.hThread);
 	::WaitForSingleObject(pi.hProcess, 100000);
 	::CloseHandle(pi.hProcess);
 
 	delete [] tikaParam;
 
-	//::MessageBox(NULL, tstemporaryTextFile.c_str(), L"tstemporaryTextFile", 0);
-	::MoveFileEx(tstemporaryTextFile.c_str(), fileDst, MOVEFILE_REPLACE_EXISTING);
+	::MessageBox(NULL, tstempTextFile.c_str(), L"tstempTextFile", 0);
+	::MoveFileEx(tstempTextFile.c_str(), fileDst, MOVEFILE_REPLACE_EXISTING);
 
 	if(fileCopied){
 		::DeleteFile(tsTempFileName.c_str());

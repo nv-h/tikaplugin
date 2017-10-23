@@ -5,11 +5,11 @@
 /* link this file in with the server and any clients */
 
 
- /* File created by MIDL compiler version 8.00.0595 */
-/* at Thu Nov 08 22:44:12 2012
+ /* File created by MIDL compiler version 8.01.0622 */
+/* at Tue Jan 19 12:14:07 2038
  */
 /* Compiler settings for xdocdiffplugin.idl:
-    Oicf, W1, Zp8, env=Win64 (32b run), target_arch=AMD64 8.00.0595 
+    Oicf, W1, Zp8, env=Win64 (32b run), target_arch=AMD64 8.01.0622 
     protocol : dce , ms_ext, c_ext, robust
     error checks: allocation ref bounds_check enum stub_data 
     VC __declspec() decoration level: 
@@ -63,9 +63,9 @@ typedef IID CLSID;
 #endif // CLSID_DEFINED
 
 #define MIDL_DEFINE_GUID(type,name,l,w1,w2,b1,b2,b3,b4,b5,b6,b7,b8) \
-        const type name = {l,w1,w2,{b1,b2,b3,b4,b5,b6,b7,b8}}
+        EXTERN_C __declspec(selectany) const type name = {l,w1,w2,{b1,b2,b3,b4,b5,b6,b7,b8}}
 
-#endif !_MIDL_USE_GUIDDEF_
+#endif // !_MIDL_USE_GUIDDEF_
 
 MIDL_DEFINE_GUID(IID, IID_IWinMergeScript,0x47E6B958,0xC17A,0x4024,0x9B,0xE1,0x68,0xDC,0xC9,0x2D,0xD4,0x6E);
 

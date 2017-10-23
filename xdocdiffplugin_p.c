@@ -3,11 +3,11 @@
 /* this ALWAYS GENERATED file contains the proxy stub code */
 
 
- /* File created by MIDL compiler version 8.00.0595 */
-/* at Thu Nov 08 22:44:12 2012
+ /* File created by MIDL compiler version 8.01.0622 */
+/* at Tue Jan 19 12:14:07 2038
  */
 /* Compiler settings for xdocdiffplugin.idl:
-    Oicf, W1, Zp8, env=Win64 (32b run), target_arch=AMD64 8.00.0595 
+    Oicf, W1, Zp8, env=Win64 (32b run), target_arch=AMD64 8.01.0622 
     protocol : dce , ms_ext, c_ext, robust
     error checks: allocation ref bounds_check enum stub_data 
     VC __declspec() decoration level: 
@@ -1268,7 +1268,7 @@ static const MIDL_STUB_DESC Object_StubDesc =
     1, /* -error bounds_check flag */
     0x50002, /* Ndr library version */
     0,
-    0x8000253, /* MIDL Version 8.0.595 */
+    0x801026e, /* MIDL Version 8.1.622 */
     0,
     UserMarshalRoutines,
     0,  /* notify & notify_flag routine table */
