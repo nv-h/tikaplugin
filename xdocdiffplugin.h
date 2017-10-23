@@ -6,7 +6,7 @@
  /* File created by MIDL compiler version 8.01.0622 */
 /* at Tue Jan 19 12:14:07 2038
  */
-/* Compiler settings for xdocdiffplugin.idl:
+/* Compiler settings for tikaplugin.idl:
     Oicf, W1, Zp8, env=Win64 (32b run), target_arch=AMD64 8.01.0622 
     protocol : dce , ms_ext, c_ext, robust
     error checks: allocation ref bounds_check enum stub_data 
@@ -36,8 +36,8 @@
 #include "ole2.h"
 #endif /*COM_NO_WINDOWS_H*/
 
-#ifndef __xdocdiffplugin_h__
-#define __xdocdiffplugin_h__
+#ifndef __tikaplugin_h__
+#define __tikaplugin_h__
 
 #if defined(_MSC_VER) && (_MSC_VER >= 1020)
 #pragma once
@@ -306,14 +306,14 @@ EXTERN_C const IID IID_IWinMergeScript;
 
 
 
-#ifndef __xdocdiffpluginLib_LIBRARY_DEFINED__
-#define __xdocdiffpluginLib_LIBRARY_DEFINED__
+#ifndef __tikapluginLib_LIBRARY_DEFINED__
+#define __tikapluginLib_LIBRARY_DEFINED__
 
-/* library xdocdiffpluginLib */
+/* library tikapluginLib */
 /* [helpstring][version][uuid] */ 
 
 
-EXTERN_C const IID LIBID_xdocdiffpluginLib;
+EXTERN_C const IID LIBID_tikapluginLib;
 
 EXTERN_C const CLSID CLSID_WinMergeScript;
 
@@ -322,7 +322,7 @@ EXTERN_C const CLSID CLSID_WinMergeScript;
 class DECLSPEC_UUID("E408AD39-EC2E-4615-B474-F98FDDF2ED93")
 WinMergeScript;
 #endif
-#endif /* __xdocdiffpluginLib_LIBRARY_DEFINED__ */
+#endif /* __tikapluginLib_LIBRARY_DEFINED__ */
 
 /* Additional Prototypes for ALL interfaces */
 

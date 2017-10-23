@@ -19,12 +19,12 @@
 extern "C"   {
 #endif
 
-EXTERN_PROXY_FILE( xdocdiffplugin )
+EXTERN_PROXY_FILE( tikaplugin )
 
 
 PROXYFILE_LIST_START
 /* Start of list */
-  REFERENCE_PROXY_FILE( xdocdiffplugin ),
+  REFERENCE_PROXY_FILE( tikaplugin ),
 /* End of list */
 PROXYFILE_LIST_END
 

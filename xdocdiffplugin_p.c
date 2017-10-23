@@ -6,7 +6,7 @@
  /* File created by MIDL compiler version 8.01.0622 */
 /* at Tue Jan 19 12:14:07 2038
  */
-/* Compiler settings for xdocdiffplugin.idl:
+/* Compiler settings for tikaplugin.idl:
     Oicf, W1, Zp8, env=Win64 (32b run), target_arch=AMD64 8.01.0622 
     protocol : dce , ms_ext, c_ext, robust
     error checks: allocation ref bounds_check enum stub_data 
@@ -44,7 +44,7 @@
 #endif /* __RPCPROXY_H_VERSION__ */
 
 
-#include "xdocdiffplugin.h"
+#include "tikaplugin.h"
 
 #define TYPE_FORMAT_STRING_SIZE   1041                              
 #define PROC_FORMAT_STRING_SIZE   401                               
@@ -52,32 +52,32 @@
 #define TRANSMIT_AS_TABLE_SIZE    0            
 #define WIRE_MARSHAL_TABLE_SIZE   2            
 
-typedef struct _xdocdiffplugin_MIDL_TYPE_FORMAT_STRING
+typedef struct _tikaplugin_MIDL_TYPE_FORMAT_STRING
     {
     short          Pad;
     unsigned char  Format[ TYPE_FORMAT_STRING_SIZE ];
-    } xdocdiffplugin_MIDL_TYPE_FORMAT_STRING;
+    } tikaplugin_MIDL_TYPE_FORMAT_STRING;
 
-typedef struct _xdocdiffplugin_MIDL_PROC_FORMAT_STRING
+typedef struct _tikaplugin_MIDL_PROC_FORMAT_STRING
     {
     short          Pad;
     unsigned char  Format[ PROC_FORMAT_STRING_SIZE ];
-    } xdocdiffplugin_MIDL_PROC_FORMAT_STRING;
+    } tikaplugin_MIDL_PROC_FORMAT_STRING;
 
-typedef struct _xdocdiffplugin_MIDL_EXPR_FORMAT_STRING
+typedef struct _tikaplugin_MIDL_EXPR_FORMAT_STRING
     {
     long          Pad;
     unsigned char  Format[ EXPR_FORMAT_STRING_SIZE ];
-    } xdocdiffplugin_MIDL_EXPR_FORMAT_STRING;
+    } tikaplugin_MIDL_EXPR_FORMAT_STRING;
 
 
 static const RPC_SYNTAX_IDENTIFIER  _RpcTransferSyntax = 
 {{0x8A885D04,0x1CEB,0x11C9,{0x9F,0xE8,0x08,0x00,0x2B,0x10,0x48,0x60}},{2,0}};
 
 
-extern const xdocdiffplugin_MIDL_TYPE_FORMAT_STRING xdocdiffplugin__MIDL_TypeFormatString;
-extern const xdocdiffplugin_MIDL_PROC_FORMAT_STRING xdocdiffplugin__MIDL_ProcFormatString;
-extern const xdocdiffplugin_MIDL_EXPR_FORMAT_STRING xdocdiffplugin__MIDL_ExprFormatString;
+extern const tikaplugin_MIDL_TYPE_FORMAT_STRING tikaplugin__MIDL_TypeFormatString;
+extern const tikaplugin_MIDL_PROC_FORMAT_STRING tikaplugin__MIDL_ProcFormatString;
+extern const tikaplugin_MIDL_EXPR_FORMAT_STRING tikaplugin__MIDL_ExprFormatString;
 
 
 extern const MIDL_STUB_DESC Object_StubDesc;
@@ -93,7 +93,7 @@ extern const USER_MARSHAL_ROUTINE_QUADRUPLE UserMarshalRoutines[ WIRE_MARSHAL_TA
 #error  Invalid build platform for this stub.
 #endif
 
-static const xdocdiffplugin_MIDL_PROC_FORMAT_STRING xdocdiffplugin__MIDL_ProcFormatString =
+static const tikaplugin_MIDL_PROC_FORMAT_STRING tikaplugin__MIDL_ProcFormatString =
     {
         0,
         {
@@ -461,7 +461,7 @@ static const xdocdiffplugin_MIDL_PROC_FORMAT_STRING xdocdiffplugin__MIDL_ProcFor
         }
     };
 
-static const xdocdiffplugin_MIDL_TYPE_FORMAT_STRING xdocdiffplugin__MIDL_TypeFormatString =
+static const tikaplugin_MIDL_TYPE_FORMAT_STRING tikaplugin__MIDL_TypeFormatString =
     {
         0,
         {
@@ -1189,7 +1189,7 @@ static const unsigned short IWinMergeScript_FormatStringOffsetTable[] =
 static const MIDL_STUBLESS_PROXY_INFO IWinMergeScript_ProxyInfo =
     {
     &Object_StubDesc,
-    xdocdiffplugin__MIDL_ProcFormatString.Format,
+    tikaplugin__MIDL_ProcFormatString.Format,
     &IWinMergeScript_FormatStringOffsetTable[-3],
     0,
     0,
@@ -1201,7 +1201,7 @@ static const MIDL_SERVER_INFO IWinMergeScript_ServerInfo =
     {
     &Object_StubDesc,
     0,
-    xdocdiffplugin__MIDL_ProcFormatString.Format,
+    tikaplugin__MIDL_ProcFormatString.Format,
     &IWinMergeScript_FormatStringOffsetTable[-3],
     0,
     0,
@@ -1264,7 +1264,7 @@ static const MIDL_STUB_DESC Object_StubDesc =
     0,
     0,
     0,
-    xdocdiffplugin__MIDL_TypeFormatString.Format,
+    tikaplugin__MIDL_TypeFormatString.Format,
     1, /* -error bounds_check flag */
     0x50002, /* Ndr library version */
     0,
@@ -1278,37 +1278,37 @@ static const MIDL_STUB_DESC Object_StubDesc =
     0
     };
 
-const CInterfaceProxyVtbl * const _xdocdiffplugin_ProxyVtblList[] = 
+const CInterfaceProxyVtbl * const _tikaplugin_ProxyVtblList[] = 
 {
     ( CInterfaceProxyVtbl *) &_IWinMergeScriptProxyVtbl,
     0
 };
 
-const CInterfaceStubVtbl * const _xdocdiffplugin_StubVtblList[] = 
+const CInterfaceStubVtbl * const _tikaplugin_StubVtblList[] = 
 {
     ( CInterfaceStubVtbl *) &_IWinMergeScriptStubVtbl,
     0
 };
 
-PCInterfaceName const _xdocdiffplugin_InterfaceNamesList[] = 
+PCInterfaceName const _tikaplugin_InterfaceNamesList[] = 
 {
     "IWinMergeScript",
     0
 };
 
-const IID *  const _xdocdiffplugin_BaseIIDList[] = 
+const IID *  const _tikaplugin_BaseIIDList[] = 
 {
     &IID_IDispatch,
     0
 };
 
 
-#define _xdocdiffplugin_CHECK_IID(n)	IID_GENERIC_CHECK_IID( _xdocdiffplugin, pIID, n)
+#define _tikaplugin_CHECK_IID(n)	IID_GENERIC_CHECK_IID( _tikaplugin, pIID, n)
 
-int __stdcall _xdocdiffplugin_IID_Lookup( const IID * pIID, int * pIndex )
+int __stdcall _tikaplugin_IID_Lookup( const IID * pIID, int * pIndex )
 {
     
-    if(!_xdocdiffplugin_CHECK_IID(0))
+    if(!_tikaplugin_CHECK_IID(0))
         {
         *pIndex = 0;
         return 1;
@@ -1317,13 +1317,13 @@ int __stdcall _xdocdiffplugin_IID_Lookup( const IID * pIID, int * pIndex )
     return 0;
 }
 
-const ExtendedProxyFileInfo xdocdiffplugin_ProxyFileInfo = 
+const ExtendedProxyFileInfo tikaplugin_ProxyFileInfo = 
 {
-    (PCInterfaceProxyVtblList *) & _xdocdiffplugin_ProxyVtblList,
-    (PCInterfaceStubVtblList *) & _xdocdiffplugin_StubVtblList,
-    (const PCInterfaceName * ) & _xdocdiffplugin_InterfaceNamesList,
-    (const IID ** ) & _xdocdiffplugin_BaseIIDList,
-    & _xdocdiffplugin_IID_Lookup, 
+    (PCInterfaceProxyVtblList *) & _tikaplugin_ProxyVtblList,
+    (PCInterfaceStubVtblList *) & _tikaplugin_StubVtblList,
+    (const PCInterfaceName * ) & _tikaplugin_InterfaceNamesList,
+    (const IID ** ) & _tikaplugin_BaseIIDList,
+    & _tikaplugin_IID_Lookup, 
     1,
     2,
     0, /* table of [async_uuid] interfaces */

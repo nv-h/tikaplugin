@@ -40,7 +40,7 @@ END
 
 3 TEXTINCLUDE DISCARDABLE 
 BEGIN
-    "1 TYPELIB ""xdocdiffplugin.tlb""\r\n"
+    "1 TYPELIB ""tikaplugin.tlb""\r\n"
     "\0"
 END
 
@@ -71,12 +71,12 @@ BEGIN
         BLOCK "040904B0"
         BEGIN
             VALUE "CompanyName", "\0"
-            VALUE "FileDescription", "xdocdiffplugin Module\0"
+            VALUE "FileDescription", "tikaplugin Module\0"
             VALUE "FileVersion", "1, 0, 5, 17115\0"
-            VALUE "InternalName", "xdocdiffplugin\0"
+            VALUE "InternalName", "tikaplugin\0"
             VALUE "LegalCopyright", "Copyright 2003-2007\0"
-            VALUE "OriginalFilename", "xdocdiffplugin.DLL\0"
-            VALUE "ProductName", "xdocdiffplugin Module\0"
+            VALUE "OriginalFilename", "tikaplugin.DLL\0"
+            VALUE "ProductName", "tikaplugin Module\0"
             VALUE "ProductVersion", "1, 0, 5, 17115\0"
             VALUE "OLESelfRegister", "\0"
         END
@@ -97,7 +97,7 @@ END
 
 STRINGTABLE DISCARDABLE 
 BEGIN
-    IDS_PROJNAME            "xdocdiffplugin"
+    IDS_PROJNAME            "tikaplugin"
 END
 
 #endif    // French (France) resources
@@ -110,7 +110,7 @@ END
 //
 // Generated from the TEXTINCLUDE 3 resource.
 //
-1 TYPELIB "xdocdiffplugin.tlb"
+1 TYPELIB "tikaplugin.tlb"
 
 /////////////////////////////////////////////////////////////////////////////
 #endif    // not APSTUDIO_INVOKED

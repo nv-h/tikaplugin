@@ -1,6 +1,6 @@
 // WinMergeScript.cpp : Implementation of CWinMergeScript
 #include "stdafx.h"
-#include "xdocdiffplugin.h"
+#include "tikaplugin.h"
 #include "WinMergeScript.h"
 #include "unicheck.h"
 #include <fstream>

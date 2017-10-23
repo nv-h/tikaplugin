@@ -1,6 +1,6 @@
 //{{NO_DEPENDENCIES}}
 // Microsoft Developer Studio generated include file.
-// Used by xdocdiffplugin.rc
+// Used by tikaplugin.rc
 //
 #define IDS_PROJNAME                    100
 #define IDR_WINMERGESCRIPT              101

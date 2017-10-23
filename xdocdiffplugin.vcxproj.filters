@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="xdocdiffplugin.cpp">
+    <ClCompile Include="tikaplugin.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="StdAfx.cpp">
@@ -29,7 +29,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="xdocdiffplugin.def">
+    <None Include="tikaplugin.def">
       <Filter>Source Files</Filter>
     </None>
     <None Include="WinMergeScript.rgs">
@@ -37,12 +37,12 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Midl Include="xdocdiffplugin.idl">
+    <Midl Include="tikaplugin.idl">
       <Filter>Source Files</Filter>
     </Midl>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="xdocdiffplugin.rc">
+    <ResourceCompile Include="tikaplugin.rc">
       <Filter>Source Files</Filter>
     </ResourceCompile>
   </ItemGroup>

@@ -1,28 +1,28 @@
-# Microsoft Developer Studio Project File - Name="xdocdiffplugin" - Package Owner=<4>
+# Microsoft Developer Studio Project File - Name="tikaplugin" - Package Owner=<4>
 # Microsoft Developer Studio Generated Build File, Format Version 6.00
 # ** DO NOT EDIT **
 
 # TARGTYPE "Win32 (x86) Dynamic-Link Library" 0x0102
 
-CFG=xdocdiffplugin - Win32 Debug
+CFG=tikaplugin - Win32 Debug
 !MESSAGE This is not a valid makefile. To build this project using NMAKE,
 !MESSAGE use the Export Makefile command and run
 !MESSAGE 
-!MESSAGE NMAKE /f "xdocdiffplugin.mak".
+!MESSAGE NMAKE /f "tikaplugin.mak".
 !MESSAGE 
 !MESSAGE You can specify a configuration when running NMAKE
 !MESSAGE by defining the macro CFG on the command line. For example:
 !MESSAGE 
-!MESSAGE NMAKE /f "xdocdiffplugin.mak" CFG="xdocdiffplugin - Win32 Debug"
+!MESSAGE NMAKE /f "tikaplugin.mak" CFG="tikaplugin - Win32 Debug"
 !MESSAGE 
 !MESSAGE Possible choices for configuration are:
 !MESSAGE 
-!MESSAGE "xdocdiffplugin - Win32 Debug" (based on "Win32 (x86) Dynamic-Link Library")
-!MESSAGE "xdocdiffplugin - Win32 Unicode Debug" (based on "Win32 (x86) Dynamic-Link Library")
-!MESSAGE "xdocdiffplugin - Win32 Release MinSize" (based on "Win32 (x86) Dynamic-Link Library")
-!MESSAGE "xdocdiffplugin - Win32 Release MinDependency" (based on "Win32 (x86) Dynamic-Link Library")
-!MESSAGE "xdocdiffplugin - Win32 Unicode Release MinSize" (based on "Win32 (x86) Dynamic-Link Library")
-!MESSAGE "xdocdiffplugin - Win32 Unicode Release MinDependency" (based on "Win32 (x86) Dynamic-Link Library")
+!MESSAGE "tikaplugin - Win32 Debug" (based on "Win32 (x86) Dynamic-Link Library")
+!MESSAGE "tikaplugin - Win32 Unicode Debug" (based on "Win32 (x86) Dynamic-Link Library")
+!MESSAGE "tikaplugin - Win32 Release MinSize" (based on "Win32 (x86) Dynamic-Link Library")
+!MESSAGE "tikaplugin - Win32 Release MinDependency" (based on "Win32 (x86) Dynamic-Link Library")
+!MESSAGE "tikaplugin - Win32 Unicode Release MinSize" (based on "Win32 (x86) Dynamic-Link Library")
+!MESSAGE "tikaplugin - Win32 Unicode Release MinDependency" (based on "Win32 (x86) Dynamic-Link Library")
 !MESSAGE 
 
 # Begin Project
@@ -33,7 +33,7 @@ CPP=xicl6.exe
 MTL=midl.exe
 RSC=rc.exe
 
-!IF  "$(CFG)" == "xdocdiffplugin - Win32 Debug"
+!IF  "$(CFG)" == "tikaplugin - Win32 Debug"
 
 # PROP BASE Use_MFC 0
 # PROP BASE Use_Debug_Libraries 1
@@ -54,9 +54,9 @@ BSC32=bscmake.exe
 # ADD BSC32 /nologo
 LINK32=xilink6.exe
 # ADD BASE LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /debug /machine:I386 /pdbtype:sept
-# ADD LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /debug /machine:I386 /out:"..\..\..\Build\MergeDebug\MergePlugins/xdocdiffplugin.dll" /pdbtype:sept
+# ADD LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /debug /machine:I386 /out:"..\..\..\Build\MergeDebug\MergePlugins/tikaplugin.dll" /pdbtype:sept
 
-!ELSEIF  "$(CFG)" == "xdocdiffplugin - Win32 Unicode Debug"
+!ELSEIF  "$(CFG)" == "tikaplugin - Win32 Unicode Debug"
 
 # PROP BASE Use_MFC 0
 # PROP BASE Use_Debug_Libraries 1
@@ -65,8 +65,8 @@ LINK32=xilink6.exe
 # PROP BASE Target_Dir ""
 # PROP Use_MFC 0
 # PROP Use_Debug_Libraries 1
-# PROP Output_Dir "..\..\..\BuildTmp\xdocdiffplugin\DebugU"
-# PROP Intermediate_Dir "..\..\..\BuildTmp\xdocdiffplugin\DebugU"
+# PROP Output_Dir "..\..\..\BuildTmp\tikaplugin\DebugU"
+# PROP Intermediate_Dir "..\..\..\BuildTmp\tikaplugin\DebugU"
 
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /YX /FD /GZ /c
@@ -78,9 +78,9 @@ BSC32=bscmake.exe
 # ADD BSC32 /nologo
 LINK32=xilink6.exe
 # ADD BASE LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /debug /machine:I386 /pdbtype:sept
-# ADD LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /debug /machine:I386 /out:"..\..\..\Build\MergeUnicodeDebug\MergePlugins/xdocdiffplugin.dll" /pdbtype:sept
+# ADD LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /debug /machine:I386 /out:"..\..\..\Build\MergeUnicodeDebug\MergePlugins/tikaplugin.dll" /pdbtype:sept
 
-!ELSEIF  "$(CFG)" == "xdocdiffplugin - Win32 Release MinSize"
+!ELSEIF  "$(CFG)" == "tikaplugin - Win32 Release MinSize"
 
 # PROP BASE Use_MFC 0
 # PROP BASE Use_Debug_Libraries 0
@@ -89,8 +89,8 @@ LINK32=xilink6.exe
 # PROP BASE Target_Dir ""
 # PROP Use_MFC 0
 # PROP Use_Debug_Libraries 0
-# PROP Output_Dir "..\..\..\BuildTmp\xdocdiffplugin\ReleaseMinSize"
-# PROP Intermediate_Dir "..\..\..\BuildTmp\xdocdiffplugin\ReleaseMinSize"
+# PROP Output_Dir "..\..\..\BuildTmp\tikaplugin\ReleaseMinSize"
+# PROP Intermediate_Dir "..\..\..\BuildTmp\tikaplugin\ReleaseMinSize"
 
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /YX /FD /c
@@ -102,9 +102,9 @@ BSC32=bscmake.exe
 # ADD BSC32 /nologo
 LINK32=xilink6.exe
 # ADD BASE LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /machine:I386
-# ADD LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /machine:I386 /out:"..\..\..\Build\MergeReleaseMinSize\MergePlugins/xdocdiffplugin.dll"
+# ADD LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /machine:I386 /out:"..\..\..\Build\MergeReleaseMinSize\MergePlugins/tikaplugin.dll"
 
-!ELSEIF  "$(CFG)" == "xdocdiffplugin - Win32 Release MinDependency"
+!ELSEIF  "$(CFG)" == "tikaplugin - Win32 Release MinDependency"
 
 # PROP BASE Use_MFC 0
 # PROP BASE Use_Debug_Libraries 0
@@ -113,8 +113,8 @@ LINK32=xilink6.exe
 # PROP BASE Target_Dir ""
 # PROP Use_MFC 0
 # PROP Use_Debug_Libraries 0
-# PROP Output_Dir "..\..\..\BuildTmp\xdocdiffplugin\ReleaseMinDependency"
-# PROP Intermediate_Dir "..\..\..\BuildTmp\xdocdiffplugin\ReleaseMinDependency"
+# PROP Output_Dir "..\..\..\BuildTmp\tikaplugin\ReleaseMinDependency"
+# PROP Intermediate_Dir "..\..\..\BuildTmp\tikaplugin\ReleaseMinDependency"
 
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /YX /FD /c
@@ -126,9 +126,9 @@ BSC32=bscmake.exe
 # ADD BSC32 /nologo
 LINK32=xilink6.exe
 # ADD BASE LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /machine:I386
-# ADD LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /machine:I386 /out:"..\..\..\Build\MergeRelease\MergePlugins/xdocdiffplugin.dll"
+# ADD LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /machine:I386 /out:"..\..\..\Build\MergeRelease\MergePlugins/tikaplugin.dll"
 
-!ELSEIF  "$(CFG)" == "xdocdiffplugin - Win32 Unicode Release MinSize"
+!ELSEIF  "$(CFG)" == "tikaplugin - Win32 Unicode Release MinSize"
 
 # PROP BASE Use_MFC 0
 # PROP BASE Use_Debug_Libraries 0
@@ -137,8 +137,8 @@ LINK32=xilink6.exe
 # PROP BASE Target_Dir ""
 # PROP Use_MFC 0
 # PROP Use_Debug_Libraries 0
-# PROP Output_Dir "..\..\..\BuildTmp\xdocdiffplugin\ReleaseUMinSize"
-# PROP Intermediate_Dir "..\..\..\BuildTmp\xdocdiffplugin\ReleaseUMinSize"
+# PROP Output_Dir "..\..\..\BuildTmp\tikaplugin\ReleaseUMinSize"
+# PROP Intermediate_Dir "..\..\..\BuildTmp\tikaplugin\ReleaseUMinSize"
 
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /YX /FD /c
@@ -150,9 +150,9 @@ BSC32=bscmake.exe
 # ADD BSC32 /nologo
 LINK32=xilink6.exe
 # ADD BASE LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /machine:I386
-# ADD LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /machine:I386 /out:"..\..\..\Build\MergeUnicodeReleaseMinSize\MergePlugins/xdocdiffplugin.dll"
+# ADD LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /machine:I386 /out:"..\..\..\Build\MergeUnicodeReleaseMinSize\MergePlugins/tikaplugin.dll"
 
-!ELSEIF  "$(CFG)" == "xdocdiffplugin - Win32 Unicode Release MinDependency"
+!ELSEIF  "$(CFG)" == "tikaplugin - Win32 Unicode Release MinDependency"
 
 # PROP BASE Use_MFC 0
 # PROP BASE Use_Debug_Libraries 0
@@ -161,8 +161,8 @@ LINK32=xilink6.exe
 # PROP BASE Target_Dir ""
 # PROP Use_MFC 0
 # PROP Use_Debug_Libraries 0
-# PROP Output_Dir "..\..\..\BuildTmp\xdocdiffplugin\ReleaseUMinDependency"
-# PROP Intermediate_Dir "..\..\..\BuildTmp\xdocdiffplugin\ReleaseUMinDependency"
+# PROP Output_Dir "..\..\..\BuildTmp\tikaplugin\ReleaseUMinDependency"
+# PROP Intermediate_Dir "..\..\..\BuildTmp\tikaplugin\ReleaseUMinDependency"
 
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /YX /FD /c
@@ -174,37 +174,37 @@ BSC32=bscmake.exe
 # ADD BSC32 /nologo
 LINK32=xilink6.exe
 # ADD BASE LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /machine:I386
-# ADD LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /machine:I386 /out:"..\..\..\Build\MergeUnicodeRelease\MergePlugins/xdocdiffplugin.dll"
+# ADD LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /machine:I386 /out:"..\..\..\Build\MergeUnicodeRelease\MergePlugins/tikaplugin.dll"
 
 !ENDIF 
 
 # Begin Target
 
-# Name "xdocdiffplugin - Win32 Debug"
-# Name "xdocdiffplugin - Win32 Unicode Debug"
-# Name "xdocdiffplugin - Win32 Release MinSize"
-# Name "xdocdiffplugin - Win32 Release MinDependency"
-# Name "xdocdiffplugin - Win32 Unicode Release MinSize"
-# Name "xdocdiffplugin - Win32 Unicode Release MinDependency"
+# Name "tikaplugin - Win32 Debug"
+# Name "tikaplugin - Win32 Unicode Debug"
+# Name "tikaplugin - Win32 Release MinSize"
+# Name "tikaplugin - Win32 Release MinDependency"
+# Name "tikaplugin - Win32 Unicode Release MinSize"
+# Name "tikaplugin - Win32 Unicode Release MinDependency"
 # Begin Group "Source Files"
 
 # PROP Default_Filter "cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
 # Begin Source File
 
-SOURCE=.\xdocdiffplugin.cpp
+SOURCE=.\tikaplugin.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\xdocdiffplugin.def
+SOURCE=.\tikaplugin.def
 # End Source File
 # Begin Source File
 
-SOURCE=.\xdocdiffplugin.idl
-# ADD MTL /tlb ".\xdocdiffplugin.tlb" /h "xdocdiffplugin.h" /iid "xdocdiffplugin_i.c" /Oicf
+SOURCE=.\tikaplugin.idl
+# ADD MTL /tlb ".\tikaplugin.tlb" /h "tikaplugin.h" /iid "tikaplugin_i.c" /Oicf
 # End Source File
 # Begin Source File
 
-SOURCE=.\xdocdiffplugin.rc
+SOURCE=.\tikaplugin.rc
 # End Source File
 # Begin Source File
 

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2012 for Windows Desktop
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xdocdiffplugin", "xdocdiffplugin.vcxproj", "{79B6EC0F-60BE-4353-A6BC-842092888C47}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tikaplugin", "tikaplugin.vcxproj", "{79B6EC0F-60BE-4353-A6BC-842092888C47}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

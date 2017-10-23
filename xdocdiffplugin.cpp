@@ -1,16 +1,16 @@
-// xdocdiffplugin.cpp : Implementation of DLL Exports.
+// tikaplugin.cpp : Implementation of DLL Exports.
 
 
 // Note: Proxy/Stub Information
 //      To build a separate proxy/stub DLL, 
-//      run nmake -f xdocdiffpluginps.mk in the project directory.
+//      run nmake -f tikapluginps.mk in the project directory.
 
 #include "stdafx.h"
 #include "resource.h"
 #include <initguid.h>
-#include "xdocdiffplugin.h"
+#include "tikaplugin.h"
 
-#include "xdocdiffplugin_i.c"
+#include "tikaplugin_i.c"
 #include "WinMergeScript.h"
 
 
@@ -28,7 +28,7 @@ BOOL WINAPI DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID /*lpReserved*/)
 {
     if (dwReason == DLL_PROCESS_ATTACH)
     {
-        _Module.Init(ObjectMap, hInstance, &LIBID_xdocdiffpluginLib);
+        _Module.Init(ObjectMap, hInstance, &LIBID_tikapluginLib);
         DisableThreadLibraryCalls(hInstance);
     }
     else if (dwReason == DLL_PROCESS_DETACH)

@@ -19,7 +19,7 @@ class ATL_NO_VTABLE CWinMergeScript :
 	public CComCoClass<CWinMergeScript, &CLSID_WinMergeScript>,
 // change 3 : insert the text ", 1, 0, CComTypeInfoHolderFileOnly" 
 	// public IDispatchImpl<IWinMergeScript, &IID_IWinMergeScript, &LIBID_HIDEFIRSTLETTERLib>
-	public IDispatchImpl<IWinMergeScript, &IID_IWinMergeScript, &LIBID_xdocdiffpluginLib, 1, 0, CComTypeInfoHolderFileOnly>
+	public IDispatchImpl<IWinMergeScript, &IID_IWinMergeScript, &LIBID_tikapluginLib, 1, 0, CComTypeInfoHolderFileOnly>
 {
 public:
 	CWinMergeScript()

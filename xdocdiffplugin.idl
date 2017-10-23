@@ -1,8 +1,8 @@
-// xdocdiffplugin.idl : IDL source for xdocdiffplugin.dll
+// tikaplugin.idl : IDL source for tikaplugin.dll
 //
 
 // This file will be processed by the MIDL tool to
-// produce the type library (xdocdiffplugin.tlb) and marshalling code.
+// produce the type library (tikaplugin.tlb) and marshalling code.
 
 import "oaidl.idl";
 import "ocidl.idl";
@@ -28,9 +28,9 @@ import "ocidl.idl";
 [
 	uuid(73CA3032-1401-40BB-A73D-F719CD135EB2),
 	version(1.0),
-	helpstring("xdocdiffplugin 1.0 Type Library")
+	helpstring("tikaplugin 1.0 Type Library")
 ]
-library xdocdiffpluginLib
+library tikapluginLib
 {
 	importlib("stdole32.tlb");
 	importlib("stdole2.tlb");

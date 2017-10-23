@@ -51,9 +51,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectName>xdocdiffplugin</ProjectName>
+    <ProjectName>tikaplugin</ProjectName>
     <ProjectGuid>{79B6EC0F-60BE-4353-A6BC-842092888C47}</ProjectGuid>
-    <RootNamespace>xdocdiffplugin</RootNamespace>
+    <RootNamespace>tikaplugin</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -173,8 +173,8 @@
     <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">
-    <OutDir>.\BuildTmp\xdocdiffplugin\ReleaseMinSize\</OutDir>
-    <IntDir>.\BuildTmp\xdocdiffplugin\ReleaseMinSize\</IntDir>
+    <OutDir>.\BuildTmp\tikaplugin\ReleaseMinSize\</OutDir>
+    <IntDir>.\BuildTmp\tikaplugin\ReleaseMinSize\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>C:\Program Files\Microsoft Platform SDK\Include\atl;$(IncludePath)</IncludePath>
     <LibraryPath>C:\Program Files\Microsoft Platform SDK\Lib\AMD64\atlmfc;$(LibraryPath)</LibraryPath>
@@ -201,8 +201,8 @@
     <TargetName>$(ProjectName)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'">
-    <OutDir>.\BuildTmp\xdocdiffplugin\ReleaseUMinDependency\</OutDir>
-    <IntDir>.\BuildTmp\xdocdiffplugin\ReleaseUMinDependency\</IntDir>
+    <OutDir>.\BuildTmp\tikaplugin\ReleaseUMinDependency\</OutDir>
+    <IntDir>.\BuildTmp\tikaplugin\ReleaseUMinDependency\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>C:\Program Files\Microsoft Platform SDK\Include\atl;$(IncludePath)</IncludePath>
     <LibraryPath>C:\Program Files\Microsoft Platform SDK\Lib\AMD64\atlmfc;$(LibraryPath)</LibraryPath>
@@ -216,8 +216,8 @@
     <TargetName>$(ProjectName)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
-    <OutDir>.\BuildTmp\xdocdiffplugin\DebugU\</OutDir>
-    <IntDir>.\BuildTmp\xdocdiffplugin\DebugU\</IntDir>
+    <OutDir>.\BuildTmp\tikaplugin\DebugU\</OutDir>
+    <IntDir>.\BuildTmp\tikaplugin\DebugU\</IntDir>
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|x64'">
@@ -229,8 +229,8 @@
     <TargetName>$(ProjectName)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">
-    <OutDir>.\BuildTmp\xdocdiffplugin\ReleaseUMinSize\</OutDir>
-    <IntDir>.\BuildTmp\xdocdiffplugin\ReleaseUMinSize\</IntDir>
+    <OutDir>.\BuildTmp\tikaplugin\ReleaseUMinSize\</OutDir>
+    <IntDir>.\BuildTmp\tikaplugin\ReleaseUMinSize\</IntDir>
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|x64'">
@@ -256,7 +256,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">
     <Midl>
-      <TypeLibraryName>.\BuildTmp\xdocdiffplugin\ReleaseMinSize/xdocdiffplugin.tlb</TypeLibraryName>
+      <TypeLibraryName>.\BuildTmp\tikaplugin\ReleaseMinSize/tikaplugin.tlb</TypeLibraryName>
       <HeaderFileName />
     </Midl>
     <ClCompile>
@@ -267,7 +267,7 @@
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\BuildTmp\xdocdiffplugin\ReleaseMinSize/</AssemblerListingLocation>
+      <AssemblerListingLocation>.\BuildTmp\tikaplugin\ReleaseMinSize/</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ProgramDataBaseFileName>$(IntDir)vc90.pdb</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
@@ -280,12 +280,12 @@
     <Link>
       <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <ModuleDefinitionFile>.\xdocdiffplugin.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>.\tikaplugin.def</ModuleDefinitionFile>
       <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention />
-      <ImportLibrary>.\BuildTmp\xdocdiffplugin\ReleaseMinSize/xdocdiffplugin.lib</ImportLibrary>
+      <ImportLibrary>.\BuildTmp\tikaplugin\ReleaseMinSize/tikaplugin.lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <Bscmake>
@@ -307,7 +307,7 @@
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\BuildTmp\xdocdiffplugin\ReleaseMinSize/</AssemblerListingLocation>
+      <AssemblerListingLocation>.\BuildTmp\tikaplugin\ReleaseMinSize/</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ProgramDataBaseFileName>$(IntDir)vc90.pdb</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
@@ -320,12 +320,12 @@
     <Link>
       <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <ModuleDefinitionFile>.\xdocdiffplugin.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>.\tikaplugin.def</ModuleDefinitionFile>
       <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention />
-      <ImportLibrary>.\BuildTmp\xdocdiffplugin\ReleaseMinSize/xdocdiffplugin.lib</ImportLibrary>
+      <ImportLibrary>.\BuildTmp\tikaplugin\ReleaseMinSize/tikaplugin.lib</ImportLibrary>
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
     <Bscmake>
@@ -335,7 +335,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">
     <Midl>
-      <TypeLibraryName>$(Platform)/$(Configuration)/xdocdiffplugin.tlb</TypeLibraryName>
+      <TypeLibraryName>$(Platform)/$(Configuration)/tikaplugin.tlb</TypeLibraryName>
       <HeaderFileName />
     </Midl>
     <ClCompile>
@@ -359,12 +359,12 @@
     <Link>
       <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <ModuleDefinitionFile>.\xdocdiffplugin.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>.\tikaplugin.def</ModuleDefinitionFile>
       <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention />
-      <ImportLibrary>$(Platform)/$(Configuration)/xdocdiffplugin.lib</ImportLibrary>
+      <ImportLibrary>$(Platform)/$(Configuration)/tikaplugin.lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <Bscmake>
@@ -399,12 +399,12 @@
     <Link>
       <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <ModuleDefinitionFile>.\xdocdiffplugin.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>.\tikaplugin.def</ModuleDefinitionFile>
       <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention />
-      <ImportLibrary>$(Platform)/$(Configuration)/xdocdiffplugin.lib</ImportLibrary>
+      <ImportLibrary>$(Platform)/$(Configuration)/tikaplugin.lib</ImportLibrary>
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
     <Bscmake>
@@ -414,7 +414,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'">
     <Midl>
-      <TypeLibraryName>.\BuildTmp\xdocdiffplugin\ReleaseUMinDependency/xdocdiffplugin.tlb</TypeLibraryName>
+      <TypeLibraryName>.\BuildTmp\tikaplugin\ReleaseUMinDependency/tikaplugin.tlb</TypeLibraryName>
       <HeaderFileName />
     </Midl>
     <ClCompile>
@@ -425,7 +425,7 @@
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\BuildTmp\xdocdiffplugin\ReleaseUMinDependency/</AssemblerListingLocation>
+      <AssemblerListingLocation>.\BuildTmp\tikaplugin\ReleaseUMinDependency/</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ProgramDataBaseFileName>$(IntDir)vc90.pdb</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
@@ -438,12 +438,12 @@
     <Link>
       <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <ModuleDefinitionFile>.\xdocdiffplugin.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>.\tikaplugin.def</ModuleDefinitionFile>
       <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention />
-      <ImportLibrary>.\BuildTmp\xdocdiffplugin\ReleaseUMinDependency/xdocdiffplugin.lib</ImportLibrary>
+      <ImportLibrary>.\BuildTmp\tikaplugin\ReleaseUMinDependency/tikaplugin.lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <Bscmake>
@@ -478,12 +478,12 @@
     <Link>
       <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <ModuleDefinitionFile>.\xdocdiffplugin.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>.\tikaplugin.def</ModuleDefinitionFile>
       <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention />
-      <ImportLibrary>.\BuildTmp\xdocdiffplugin\ReleaseUMinDependency/xdocdiffplugin.lib</ImportLibrary>
+      <ImportLibrary>.\BuildTmp\tikaplugin\ReleaseUMinDependency/tikaplugin.lib</ImportLibrary>
       <TargetMachine>MachineX64</TargetMachine>
       <AdditionalDependencies>shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
@@ -494,7 +494,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
     <Midl>
-      <TypeLibraryName>.\BuildTmp\xdocdiffplugin\DebugU/xdocdiffplugin.tlb</TypeLibraryName>
+      <TypeLibraryName>.\BuildTmp\tikaplugin\DebugU/tikaplugin.tlb</TypeLibraryName>
       <HeaderFileName />
     </Midl>
     <ClCompile>
@@ -504,7 +504,7 @@
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\BuildTmp\xdocdiffplugin\DebugU/</AssemblerListingLocation>
+      <AssemblerListingLocation>.\BuildTmp\tikaplugin\DebugU/</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ProgramDataBaseFileName>$(IntDir)vc90.pdb</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
@@ -518,13 +518,13 @@
     <Link>
       <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <ModuleDefinitionFile>.\xdocdiffplugin.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>.\tikaplugin.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention />
-      <ImportLibrary>.\BuildTmp\xdocdiffplugin\DebugU/xdocdiffplugin.lib</ImportLibrary>
+      <ImportLibrary>.\BuildTmp\tikaplugin\DebugU/tikaplugin.lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <Bscmake>
@@ -545,7 +545,7 @@
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\BuildTmp\xdocdiffplugin\DebugU/</AssemblerListingLocation>
+      <AssemblerListingLocation>.\BuildTmp\tikaplugin\DebugU/</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ProgramDataBaseFileName>$(IntDir)vc90.pdb</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
@@ -559,13 +559,13 @@
     <Link>
       <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <ModuleDefinitionFile>.\xdocdiffplugin.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>.\tikaplugin.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention />
-      <ImportLibrary>.\BuildTmp\xdocdiffplugin\DebugU/xdocdiffplugin.lib</ImportLibrary>
+      <ImportLibrary>.\BuildTmp\tikaplugin\DebugU/tikaplugin.lib</ImportLibrary>
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
     <Bscmake>
@@ -575,7 +575,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">
     <Midl>
-      <TypeLibraryName>.\BuildTmp\xdocdiffplugin\ReleaseUMinSize/xdocdiffplugin.tlb</TypeLibraryName>
+      <TypeLibraryName>.\BuildTmp\tikaplugin\ReleaseUMinSize/tikaplugin.tlb</TypeLibraryName>
       <HeaderFileName />
     </Midl>
     <ClCompile>
@@ -586,7 +586,7 @@
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\BuildTmp\xdocdiffplugin\ReleaseUMinSize/</AssemblerListingLocation>
+      <AssemblerListingLocation>.\BuildTmp\tikaplugin\ReleaseUMinSize/</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ProgramDataBaseFileName>$(IntDir)vc90.pdb</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
@@ -599,12 +599,12 @@
     <Link>
       <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <ModuleDefinitionFile>.\xdocdiffplugin.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>.\tikaplugin.def</ModuleDefinitionFile>
       <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention />
-      <ImportLibrary>.\BuildTmp\xdocdiffplugin\ReleaseUMinSize/xdocdiffplugin.lib</ImportLibrary>
+      <ImportLibrary>.\BuildTmp\tikaplugin\ReleaseUMinSize/tikaplugin.lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <Bscmake>
@@ -626,7 +626,7 @@
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\BuildTmp\xdocdiffplugin\ReleaseUMinSize/</AssemblerListingLocation>
+      <AssemblerListingLocation>.\BuildTmp\tikaplugin\ReleaseUMinSize/</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ProgramDataBaseFileName>$(IntDir)vc90.pdb</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
@@ -639,12 +639,12 @@
     <Link>
       <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <ModuleDefinitionFile>.\xdocdiffplugin.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>.\tikaplugin.def</ModuleDefinitionFile>
       <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention />
-      <ImportLibrary>.\BuildTmp\xdocdiffplugin\ReleaseUMinSize/xdocdiffplugin.lib</ImportLibrary>
+      <ImportLibrary>.\BuildTmp\tikaplugin\ReleaseUMinSize/tikaplugin.lib</ImportLibrary>
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
     <Bscmake>
@@ -654,7 +654,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Midl>
-      <TypeLibraryName>.\Debug/xdocdiffplugin.tlb</TypeLibraryName>
+      <TypeLibraryName>.\Debug/tikaplugin.tlb</TypeLibraryName>
       <HeaderFileName />
     </Midl>
     <ClCompile>
@@ -678,13 +678,13 @@
     <Link>
       <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <ModuleDefinitionFile>.\xdocdiffplugin.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>.\tikaplugin.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention />
-      <ImportLibrary>.\Debug/xdocdiffplugin.lib</ImportLibrary>
+      <ImportLibrary>.\Debug/tikaplugin.lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <Bscmake>
@@ -719,13 +719,13 @@
     <Link>
       <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <ModuleDefinitionFile>.\xdocdiffplugin.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>.\tikaplugin.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention />
-      <ImportLibrary>.\Debug/xdocdiffplugin.lib</ImportLibrary>
+      <ImportLibrary>.\Debug/tikaplugin.lib</ImportLibrary>
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
     <Bscmake>
@@ -734,69 +734,69 @@
     </Bscmake>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="xdocdiffplugin.cpp" />
+    <ClCompile Include="tikaplugin.cpp" />
     <ClCompile Include="StdAfx.cpp" />
     <ClCompile Include="unicheck.cpp" />
     <ClCompile Include="WinMergeScript.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="xdocdiffplugin.def" />
+    <None Include="tikaplugin.def" />
     <None Include="WinMergeScript.rgs" />
   </ItemGroup>
   <ItemGroup>
-    <Midl Include="xdocdiffplugin.idl">
+    <Midl Include="tikaplugin.idl">
       <GenerateStublessProxies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateStublessProxies>
-      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\xdocdiffplugin.tlb</TypeLibraryName>
-      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">xdocdiffplugin.h</HeaderFileName>
-      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">xdocdiffplugin_i.c</InterfaceIdentifierFileName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\tikaplugin.tlb</TypeLibraryName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">tikaplugin.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">tikaplugin_i.c</InterfaceIdentifierFileName>
       <GenerateStublessProxies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateStublessProxies>
-      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\xdocdiffplugin.tlb</TypeLibraryName>
-      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">xdocdiffplugin.h</HeaderFileName>
-      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">xdocdiffplugin_i.c</InterfaceIdentifierFileName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\tikaplugin.tlb</TypeLibraryName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tikaplugin.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tikaplugin_i.c</InterfaceIdentifierFileName>
       <GenerateStublessProxies Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">true</GenerateStublessProxies>
-      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">.\xdocdiffplugin.tlb</TypeLibraryName>
-      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">xdocdiffplugin.h</HeaderFileName>
-      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">xdocdiffplugin_i.c</InterfaceIdentifierFileName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">.\tikaplugin.tlb</TypeLibraryName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">tikaplugin.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">tikaplugin_i.c</InterfaceIdentifierFileName>
       <GenerateStublessProxies Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|x64'">true</GenerateStublessProxies>
-      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|x64'">.\xdocdiffplugin.tlb</TypeLibraryName>
-      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|x64'">xdocdiffplugin.h</HeaderFileName>
-      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|x64'">xdocdiffplugin_i.c</InterfaceIdentifierFileName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|x64'">.\tikaplugin.tlb</TypeLibraryName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|x64'">tikaplugin.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|x64'">tikaplugin_i.c</InterfaceIdentifierFileName>
       <GenerateStublessProxies Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">true</GenerateStublessProxies>
-      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">.\xdocdiffplugin.tlb</TypeLibraryName>
-      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">xdocdiffplugin.h</HeaderFileName>
-      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">xdocdiffplugin_i.c</InterfaceIdentifierFileName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">.\tikaplugin.tlb</TypeLibraryName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">tikaplugin.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">tikaplugin_i.c</InterfaceIdentifierFileName>
       <GenerateStublessProxies Condition="'$(Configuration)|$(Platform)'=='Release MinSize|x64'">true</GenerateStublessProxies>
-      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Release MinSize|x64'">.\xdocdiffplugin.tlb</TypeLibraryName>
-      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release MinSize|x64'">xdocdiffplugin.h</HeaderFileName>
-      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Release MinSize|x64'">xdocdiffplugin_i.c</InterfaceIdentifierFileName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Release MinSize|x64'">.\tikaplugin.tlb</TypeLibraryName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release MinSize|x64'">tikaplugin.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Release MinSize|x64'">tikaplugin_i.c</InterfaceIdentifierFileName>
       <GenerateStublessProxies Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">true</GenerateStublessProxies>
-      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">.\xdocdiffplugin.tlb</TypeLibraryName>
-      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">xdocdiffplugin.h</HeaderFileName>
-      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">xdocdiffplugin_i.c</InterfaceIdentifierFileName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">.\tikaplugin.tlb</TypeLibraryName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">tikaplugin.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">tikaplugin_i.c</InterfaceIdentifierFileName>
       <GenerateStublessProxies Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|x64'">true</GenerateStublessProxies>
-      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|x64'">.\xdocdiffplugin.tlb</TypeLibraryName>
-      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|x64'">xdocdiffplugin.h</HeaderFileName>
-      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|x64'">xdocdiffplugin_i.c</InterfaceIdentifierFileName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|x64'">.\tikaplugin.tlb</TypeLibraryName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|x64'">tikaplugin.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|x64'">tikaplugin_i.c</InterfaceIdentifierFileName>
       <GenerateStublessProxies Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'">true</GenerateStublessProxies>
-      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'">.\xdocdiffplugin.tlb</TypeLibraryName>
-      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'">xdocdiffplugin.h</HeaderFileName>
-      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'">xdocdiffplugin_i.c</InterfaceIdentifierFileName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'">.\tikaplugin.tlb</TypeLibraryName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'">tikaplugin.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'">tikaplugin_i.c</InterfaceIdentifierFileName>
       <GenerateStublessProxies Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|x64'">true</GenerateStublessProxies>
-      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|x64'">.\xdocdiffplugin.tlb</TypeLibraryName>
-      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|x64'">xdocdiffplugin.h</HeaderFileName>
-      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|x64'">xdocdiffplugin_i.c</InterfaceIdentifierFileName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|x64'">.\tikaplugin.tlb</TypeLibraryName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|x64'">tikaplugin.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|x64'">tikaplugin_i.c</InterfaceIdentifierFileName>
       <GenerateStublessProxies Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">true</GenerateStublessProxies>
-      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">.\xdocdiffplugin.tlb</TypeLibraryName>
-      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">xdocdiffplugin.h</HeaderFileName>
-      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">xdocdiffplugin_i.c</InterfaceIdentifierFileName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">.\tikaplugin.tlb</TypeLibraryName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">tikaplugin.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">tikaplugin_i.c</InterfaceIdentifierFileName>
       <GenerateStublessProxies Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|x64'">true</GenerateStublessProxies>
-      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|x64'">.\xdocdiffplugin.tlb</TypeLibraryName>
-      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|x64'">xdocdiffplugin.h</HeaderFileName>
-      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|x64'">xdocdiffplugin_i.c</InterfaceIdentifierFileName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|x64'">.\tikaplugin.tlb</TypeLibraryName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|x64'">tikaplugin.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|x64'">tikaplugin_i.c</InterfaceIdentifierFileName>
     </Midl>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="xdocdiffplugin.rc">
+    <ResourceCompile Include="tikaplugin.rc">
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OUTDIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OUTDIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">$(OUTDIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>

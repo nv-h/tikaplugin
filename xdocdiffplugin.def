@@ -1,6 +1,6 @@
-; xdocdiffplugin.def : Declares the module parameters.
+; tikaplugin.def : Declares the module parameters.
 
-LIBRARY      "xdocdiffplugin.DLL"
+LIBRARY      "tikaplugin.DLL"
 
 EXPORTS
 	DllCanUnloadNow     @1 PRIVATE
