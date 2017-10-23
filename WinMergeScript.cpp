@@ -148,7 +148,7 @@ STDMETHODIMP CWinMergeScript::UnpackFile(BSTR fileSrc, BSTR fileDst, VARIANT_BOO
 
 	delete [] tikaParam;
 
-	::MessageBox(NULL, tstempTextFile.c_str(), L"tstempTextFile", 0);
+	//::MessageBox(NULL, tstempTextFile.c_str(), L"tstempTextFile", 0);
 	::MoveFileEx(tstempTextFile.c_str(), fileDst, MOVEFILE_REPLACE_EXISTING);
 
 	if(fileCopied){
