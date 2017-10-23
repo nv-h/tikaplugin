@@ -108,31 +108,33 @@ STDMETHODIMP CWinMergeScript::UnpackFile(BSTR fileSrc, BSTR fileDst, VARIANT_BOO
 		//::MessageBox(NULL, tsTempFileName.c_str(), L"tsTempFileName", 0);
 	}
 
-	tstring tsxdoc2txtParam = tsTempFileName;
-	if(tsxdoc2txtParam.find(L' ') != tstring::npos){
-		tsxdoc2txtParam = L"\"" + tsxdoc2txtParam + L"\"";
-		//::MessageBox(NULL, tsxdoc2txtParam.c_str(), L"tsxdoc2txtParam", 0);
+	tstring tstikaParam = tsTempFileName;
+	if(tstikaParam.find(L' ') != tstring::npos){
+		tstikaParam = L"\"" + tstikaParam + L"\"";
+		//::MessageBox(NULL, tstikaParam.c_str(), L"tstikaParam", 0);
 	}
-	tsxdoc2txtParam = L"xdoc2txt -f " + tsxdoc2txtParam;
-	size_t xdoc2txtParamSize = wcslen(tsxdoc2txtParam.c_str());
-	TCHAR *xdoc2txtParam = new TCHAR[xdoc2txtParamSize + 1];
-	wcscpy_s(xdoc2txtParam, xdoc2txtParamSize + 1, tsxdoc2txtParam.c_str());
-	//wcscpy(xdoc2txtParam, tsxdoc2txtParam.c_str());
-	//::MessageBox(NULL, xdoc2txtParam, L"xdoc2txtParam", 0);
+	i = tsTempFileName.rfind(L'.');
+	tstring tstemporaryTextFile = tsTempFileName.substr(0, i) + L".txt";
+
+	// $TEMP+fileSrc(binary) to $TEMP+fileSrc(.txt)
+	tstikaParam = L"java -jar C:\\tools\\tika-app-1.16.jar -t " + tstikaParam + L" > " + tstemporaryTextFile;
+	size_t tikaParamSize = wcslen(tstikaParam.c_str());
+	TCHAR *tikaParam = new TCHAR[tikaParamSize + 1];
+	wcscpy_s(tikaParam, tikaParamSize + 1, tstikaParam.c_str());
+	//wcscpy(tikaParam, tstikaParam.c_str());
+	//::MessageBox(NULL, tikaParam, L"tikaParam", 0);
 
 	PROCESS_INFORMATION pi;
 	STARTUPINFO si;
 	::ZeroMemory(&si, sizeof(si));
 	si.cb = sizeof(si);
-	::CreateProcess(NULL, xdoc2txtParam, NULL, NULL, NULL, CREATE_NO_WINDOW | NORMAL_PRIORITY_CLASS, NULL, NULL, &si, &pi);
+	::CreateProcess(NULL, tikaParam, NULL, NULL, NULL, CREATE_NO_WINDOW | NORMAL_PRIORITY_CLASS, NULL, NULL, &si, &pi);
 	::CloseHandle(pi.hThread);
 	::WaitForSingleObject(pi.hProcess, 100000);
 	::CloseHandle(pi.hProcess);
 
-	delete [] xdoc2txtParam;
+	delete [] tikaParam;
 
-	i = tsTempFileName.rfind(L'.');
-	tstring tstemporaryTextFile = tsTempFileName.substr(0, i) + L".txt";
 	//::MessageBox(NULL, tstemporaryTextFile.c_str(), L"tstemporaryTextFile", 0);
 	::MoveFileEx(tstemporaryTextFile.c_str(), fileDst, MOVEFILE_REPLACE_EXISTING);
 
