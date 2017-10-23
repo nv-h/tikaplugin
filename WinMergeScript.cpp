@@ -114,7 +114,7 @@ STDMETHODIMP CWinMergeScript::UnpackFile(BSTR fileSrc, BSTR fileDst, VARIANT_BOO
 		//::MessageBox(NULL, tstikaParam.c_str(), L"tstikaParam", 0);
 	}
 	// $TEMP+fileSrc(binary) to $TEMP+fileSrc(.txt)
-	tstikaParam = L"java -jar C:\\tools\\tika-app-1.16.jar -t " + tstikaParam;
+	tstikaParam = L"tika -t " + tstikaParam;
 	size_t tikaParamSize = wcslen(tstikaParam.c_str());
 	TCHAR *tikaParam = new TCHAR[tikaParamSize + 1];
 	wcscpy_s(tikaParam, tikaParamSize + 1, tstikaParam.c_str());
