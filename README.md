@@ -3,7 +3,8 @@
 MS OfficeファイルやPDFの比較を出来るようにする[WinMerge](http://winmerge.org/)用のプラグイン(64bit版専用)。  
 [xdocdiffPlugin64](http://crus.mydns.jp/xdocdiffPlugin64/)を少しだけ改造し、[tika](http://tika.apache.org/1.16/gettingstarted.html)により差分を取るようにしたもの。
 
-tikaPluginは、図などの中身を比較できる(そのかわり遅い)。
+tikaPluginは、図などの中身を比較できる(そのかわり遅い)。  
+また、JAVA 1.8以上が必要。
 
 WinMergeの実行ファイルがあるフォルダに、`tika.exe`を配置、WinMergeの実行ファイルがあるフォルダ内の`MergePlugins`フォルダに`tikaplugin.dll`を配置すると使えるようになるはず。
 
